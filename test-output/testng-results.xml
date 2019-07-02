@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="6021" started-at="2019-07-02T06:11:46Z" finished-at="2019-07-02T06:11:52Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="6021" started-at="2019-07-02T06:11:46Z" finished-at="2019-07-02T06:11:52Z">
+      <class name="org.leveredgeTestCases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:org.leveredgeTestCases.LoginPageTest@1ce92674]" name="setUp" is-config="true" duration-ms="5269" started-at="2019-07-02T06:11:46Z" finished-at="2019-07-02T06:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="init()[pri:0, instance:org.leveredgeTestCases.LoginPageTest@1ce92674]" name="init" is-config="true" duration-ms="46" started-at="2019-07-02T06:11:52Z" finished-at="2019-07-02T06:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="loginPage()[pri:0, instance:org.leveredgeTestCases.LoginPageTest@1ce92674]" name="loginPage" duration-ms="33" started-at="2019-07-02T06:11:52Z" finished-at="2019-07-02T06:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPage -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:org.leveredgeTestCases.LoginPageTest@1ce92674]" name="tearDown" is-config="true" duration-ms="646" started-at="2019-07-02T06:11:52Z" finished-at="2019-07-02T06:11:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.leveredgeTestCases.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
