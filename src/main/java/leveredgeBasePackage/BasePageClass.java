@@ -19,7 +19,7 @@ private final static String filepath = "C:\\Users\\user\\eclipse-workspace\\Leve
 public static WebDriver driver;
 public static Properties prop;
 
-String browserName;
+static String browserName;
 
 static  FileInputStream fs = null;
 
@@ -37,8 +37,8 @@ public static void fileSetup() {
 	}
 	}
 
-@BeforeTest
-public void setUp() {
+
+public static void setUp() {
 
 	fileSetup();
 	
@@ -56,8 +56,8 @@ public void setUp() {
 	driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 	}
 	
-@AfterTest
-public void tearDown() {
+
+public static void tearDown() {
 	if(driver != null) {
 		driver.quit();
 	}

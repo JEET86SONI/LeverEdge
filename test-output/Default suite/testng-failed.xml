@@ -3,14 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.leveredgeTestCases.LoginPageTest">
+      <class name="org.leveredgeTestCases.HomePageTest">
         <methods>
-          <include name="loginPage"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="init"/>
+          <include name="verifyConfirmScreen"/>
+          <include name="verifyWelcomeScreen"/>
         </methods>
-      </class> <!-- org.leveredgeTestCases.LoginPageTest -->
+      </class> <!-- org.leveredgeTestCases.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

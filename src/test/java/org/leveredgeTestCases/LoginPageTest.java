@@ -1,5 +1,6 @@
 package org.leveredgeTestCases;
 
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import leveredgeBasePackage.BasePageClass;
@@ -16,8 +17,14 @@ public class LoginPageTest extends BasePageClass {
 	
 	@Test(priority = 0)
 
-	public void loginPage() {
-		loginpage.validateHomePage();
+	public void validateTitle() {
+		String title = loginpage.validateHomePage();
+		Assert.assertEquals(title, "LeverEdge Login");
+	}
+	
+	@Test(priority = 1)
+	public void validatelogin() {
+		loginpage.userLogin(prop.getProperty("username"), prop.getProperty("password"),prop.getProperty("database"));
 	}
 	
 }

@@ -25,15 +25,6 @@ public class BillingPage extends BasePageClass{
 	////*[@id="rsu-popup-salesman_list-grid-area"]/table/tbody/tr[1]/td[1]
 	
 	//*[@id="rsu-popup-salesman_list-grid-area"]/table/tbody/tr[1]/td[1]
-	@FindBy(xpath="//*[@id=\"rsu-popup-salesman_list-grid-area\"]/table/tbody/tr[")
-	WebElement beforeXpath1;
-	
-	@FindBy(xpath="]/td[2]")
-	WebElement afterXpath1;
-	
-String beforeXpath = "";
-String afterXpath ="";	
-	
 
 	
 	public BillingPage() {

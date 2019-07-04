@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.leveredgeTestCases.LoginPageTest" hash-for-method="validateTitle">validateTitle</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.leveredgeTestCases.LoginPageTest" hash-for-method="validatelogin">validatelogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +121,22 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.leveredgeTestCases.LoginPageTest" hash-for-method="loginPage">loginPage</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.leveredgeTestCases.HomePageTest" hash-for-method="initialize">initialize</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.leveredgeTestCases.HomePageTest" hash-for-method="verifyBillingTab">verifyBillingTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.leveredgeTestCases.HomePageTest" hash-for-method="verifyConfirmScreen">verifyConfirmScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="org.leveredgeTestCases.HomePageTest" hash-for-method="verifyWelcomeScreen">verifyWelcomeScreen</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -117,17 +151,69 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">org.leveredgeTestCases.LoginPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginPage">
-                  </a> <!-- loginPage -->
-                  <span class="method-name">loginPage</span>
+                  <a name="validateTitle">
+                  </a> <!-- validateTitle -->
+                  <span class="method-name">validateTitle</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at leveredgePagePackage.LoginPage.validateHomePage(LoginPage.java:32)
+	at org.leveredgeTestCases.LoginPageTest.validateTitle(LoginPageTest.java:21)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validatelogin">
+                  </a> <!-- validatelogin -->
+                  <span class="method-name">validatelogin</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at org.leveredgeTestCases.LoginPageTest.validatelogin(LoginPageTest.java:27)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.leveredgeTestCases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="initialize">
+                  </a> <!-- initialize -->
+                  <span class="method-name">initialize</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBillingTab">
+                  </a> <!-- verifyBillingTab -->
+                  <span class="method-name">verifyBillingTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyConfirmScreen">
+                  </a> <!-- verifyConfirmScreen -->
+                  <span class="method-name">verifyConfirmScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWelcomeScreen">
+                  </a> <!-- verifyWelcomeScreen -->
+                  <span class="method-name">verifyWelcomeScreen</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -149,6 +235,7 @@
     &lt;classes&gt;
       &lt;class name=&quot;org.leveredgeTestCases.LoginPageTest&quot;/&gt;
       &lt;class name=&quot;leveredgeBasePackage.BasePageClass&quot;/&gt;
+      &lt;class name=&quot;org.leveredgeTestCases.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -162,7 +249,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,16 +275,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginPage')
-data.setCell(0, 2, 'org.leveredgeTestCases.LoginPageTest')
-data.setCell(0, 3, 33);
+data.setCell(0, 1, 'initialize')
+data.setCell(0, 2, 'org.leveredgeTestCases.HomePageTest')
+data.setCell(0, 3, 5628);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyWelcomeScreen')
+data.setCell(1, 2, 'org.leveredgeTestCases.HomePageTest')
+data.setCell(1, 3, 3051);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyBillingTab')
+data.setCell(2, 2, 'org.leveredgeTestCases.HomePageTest')
+data.setCell(2, 3, 2048);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyConfirmScreen')
+data.setCell(3, 2, 'org.leveredgeTestCases.HomePageTest')
+data.setCell(3, 3, 216);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateTitle')
+data.setCell(4, 2, 'org.leveredgeTestCases.LoginPageTest')
+data.setCell(4, 3, 8);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validatelogin')
+data.setCell(5, 2, 'org.leveredgeTestCases.LoginPageTest')
+data.setCell(5, 3, 2);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 ms</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -212,18 +319,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">leveredgeBasePackage.BasePageClass</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">setUp</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -233,22 +331,41 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">org.leveredgeTestCases.LoginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">init</span>
-                <span class="method-start">5278 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginPage</span>
-                <span class="method-start">5334 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateTitle</span>
+                <span class="method-start">79 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">5371 ms</span>
-              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validatelogin</span>
+                <span class="method-start">97 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.leveredgeTestCases.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">initialize</span>
+                <span class="method-start">108 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyWelcomeScreen</span>
+                <span class="method-start">5740 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyConfirmScreen</span>
+                <span class="method-start">8793 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBillingTab</span>
+                <span class="method-start">9012 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
