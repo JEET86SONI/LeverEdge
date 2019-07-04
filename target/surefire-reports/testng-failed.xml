@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListners.ExtentReportListners"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="Test(failed)">
+    <classes>
+      <class name="org.leveredgeTestCases.HomePageTest">
+        <methods>
+          <include name="verifyConfirmScreen"/>
+          <include name="verifyWelcomeScreen"/>
+        </methods>
+      </class> <!-- org.leveredgeTestCases.HomePageTest -->
+      <class name="org.leveredgeTestCases.LoginPageTest">
+        <methods>
+          <include name="validatelogin"/>
+          <include name="validateTitle"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- org.leveredgeTestCases.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
